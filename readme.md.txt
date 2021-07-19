@@ -1,0 +1,2 @@
+This project dynamically builds a navigator with interactive features on events such as scroll, mouseover, click
+Also it creates some interactiveness on the sections of the page and renders a linkthrough to continue reading.

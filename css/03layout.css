@@ -1,0 +1,89 @@
+/*
+ *
+ * CSS written based on SMACSS architecture.
+ * To learn more, visit: http://smacss.com/
+ *
+ * For simplicity, no reset or normalize is added.
+ * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
+ *
+*/
+
+
+
+/* ---- Layout Rules ---- */
+main {
+    margin: 10vh 1em 10vh;
+}
+
+.main-hero {
+    min-height: 40vh;
+    padding-top: 3em;
+}
+
+section {
+    position: relative;
+    min-height: 80vh;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 100%;
+
+}
+
+
+a {
+  color:white;
+  text-decoration: none;
+}
+
+
+.newComment {
+  display: grid;
+  /*width: 800px;
+  height: 88px;*/
+  grid-template-areas: "name surname"
+                       "tex  tex"
+                       "submit_sec submit_sec";
+  /*grid-template-columns: 400px 400px;
+  grid-template-rows: 100%;*/
+}
+
+
+.name {
+  grid-area: name;
+}
+
+.surname {
+  grid-area: surname;
+}
+
+.submit_sec{
+  grid-area: submit_sec;
+}
+
+.input_sec {
+  grid-area: tex;
+}
+
+
+input {
+  background-color: #aab7b8;
+  margin: 3px;
+
+}
+
+textarea {
+  background-color: #aab7b8;
+}
+
+
+
+#input_gb {
+  background-color: #aab7b8;
+  width: 797px;
+  height:103px;
+}

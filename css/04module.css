@@ -1,0 +1,114 @@
+/*
+ *
+ * CSS written based on SMACSS architecture.
+ * To learn more, visit: http://smacss.com/
+ *
+ * For simplicity, no reset or normalize is added.
+ * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
+ *
+*/
+
+
+
+
+
+/* ---- Module Rules ---- */
+
+# When screen size is less than 400px
+@media only screen and (max-width: 400px) {
+    .navbar__menu li {
+
+        font-size: 50%;
+        cursor:pointer;
+    }
+    .navbar__menu li.active-class {
+        font-size: 100%;
+    }
+}
+# When screen size is greater than 400px
+@media only screen and (min-width: 400px) {
+    .navbar__menu li {
+        
+        font-size: 80%;
+        cursor:pointer;
+    }
+    .navbar__menu li.active-class {
+        font-size: 150%;
+    }
+}
+/* Navigation Styles*/
+.navbar__menu ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+
+}
+
+
+
+.navbar__menu .menu__link {
+    padding: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar__menu .menu__link:hover {
+    background: #333;
+    color: #fff;
+    transition: ease 0.3s all;
+}
+
+/* Header Styles */
+.page__header {
+    background: #00008B;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+/* Footer Styles */
+.page__footer {
+    background: #000;
+    padding: 3em;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.page__footer p{
+    color: #fff;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+
+
+}

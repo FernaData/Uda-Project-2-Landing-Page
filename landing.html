@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link
+  href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
+  rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HTML Follows BEM naming conventions
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Landing Page </h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <div id="allsections">
+      <section id="section1" data-nav="Section 1" class="your-active-class">
+        <div class="landing__container">
+          <a href="C:\Users\User\Desktop\Udacity Front End\Project 1 - Landing page\section1.html"
+            target="_blank" >
+          <h2>Section 1</h2>
+          <div class="blogPost">
+          <p>Der Georgenstein, früher auch Georgstein oder Georgenfels,
+            ist ein großer Felsblock im Flussbett der Isar östlich von Baierbrunn
+            im Landkreis München, der rund fünf Meter hoch aus dem Wasser ragt.
+            Der Stein stellte zur Zeit der Flößerei auf der Isar
+            ein gefürchtetes Hindernis dar. </p>
+
+            <img src="img/Georgenstein.jpg" alt="Stone in a river"> </img>
+
+          <p>Dieser Abschnitt der Isar, der bereits zum Unterlauf des Flusses gehört,
+            weist einige namenlose Kiesinseln rund 60 Meter flussabwärts und
+            150 Meter flussaufwärts des Steins auf, zwischen Flusskilometer 164,6
+            (Zusammenfluss von freier Isar und Isarkanal nördlich des Kraftwerkes Mühltal)
+            und Flusskilometer 162,5 (Baierbrunner Wehr), deren Betreten während
+            der Brutzeit kiesbrütender Vogelarten wie des Flussregenpfeifers
+            und des Flussuferläufers verboten ist.</p>
+
+          [...] Continue Reading.
+          </div></a>
+
+        </div>
+      </section>
+      <section id="section2" data-nav="Section 2">
+        <div class="landing__container">
+          <a href="file:///C:/Users/User/Desktop/Udacity%20Front%20End/section2.html"
+            target="_blank" ><h2>Section 2</h2>
+          <p> Das Schwimmen im Eisbach München ist offiziell verboten
+            und es passieren auch regelmäßig Unfälle. Wenn überhaupt,
+            sollte man nur mit Leuten ins Wasser, die sich auskennen und wissen,
+            wo der Ausstieg ist. Der Eisbach München ist eiskalt.
+            Es ist sinnvoll die Strecke mal abzulaufen </p>
+          <img src="img/surf.jpg" alt="Guy surfing in a river"> </img>
+          <p>Falls Ihr das Abenteuer trotzdem wagt, muss unbedingt jemand dabei
+            sein, der die Strecke kennt. Vor allem, damit Du den
+             Ausstieg nicht verpasst, da es sonst lebensgefährlich wird.
+             Ihr müsst selbst entscheiden und Ihr seid selbst verantwortlich.
+             Deswegen möchte ich im Folgenden zumindest so gut es geht aufklären.</p>
+
+             [...] Continue Reading.</a>
+
+        </div>
+      </section>
+      <section id="section3" data-nav="Section 3">
+        <div class="landing__container">
+          <a href="file:///C:/Users/User/Desktop/Udacity%20Front%20End/section3.html"
+            target="_blank" >
+          <h2>Section 3</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+
+          <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+          [...] Continue Reading.</a>
+        </div>
+      </section>
+      <section id="section4" data-nav="Section 4">
+        <div class="landing__container">
+          <a href="file:///C:/Users/User/Desktop/Udacity%20Front%20End/section4.html"
+            target="_blank">
+          <h2>Section 4</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+
+          <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+          [...] Continue Reading.</a>
+        </div>
+      </section>
+    </div>
+
+  </main>
+  <footer class="page__footer">
+    <div>
+    <p>&copy Udacity</p>
+    <p> Author Fernando Wagner</p>
+    </div>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add font awesome icons -->
+    <a href= "https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+    <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+  </footer>
+
+  <script src="js/app_landing.js"></script>
+</body>
+
+</html>
